@@ -1,0 +1,18 @@
+<div class="container">
+	<section>
+		<div class="row">
+			<div class="col text-center">
+				<div class="heading">Gallery</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 colgallery"  *ngFor="let item of items; index as i">
+				<img 
+				          [lightbox]="i"
+				          [gallery]="'anotherLightbox'"
+				          [src]="item.data.thumb" class="galleryimg">
+			</div>
+		</div>
+	</section>
+	
+</div>

@@ -1,0 +1,20 @@
+<div class="logindiv">
+	<div class="container containerdiv">
+		<h1 mat-dialog-title>SignIn</h1>
+		<div mat-dialog-content>
+			<mat-label>Email</mat-label><br>
+		    <mat-form-field class="example-full-width">
+		      <input matInput [(ngModel)]="data.email" class="input" value="">
+		    </mat-form-field><br>
+		    <mat-label>Password</mat-label>
+		    <mat-form-field class="example-full-width">
+		      <input matInput type="password" class="input"  [(ngModel)]="data.password" value="">
+		    </mat-form-field>
+
+		</div>
+		<div mat-dialog-actions class="btndiv">
+		  <button mat-stroked-button [mat-dialog-close]="data" color="warn" cdkFocusInitial>Sign In</button>
+		</div>
+	</div>
+	
+</div>
